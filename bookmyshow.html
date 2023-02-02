@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>BOOK MY SHOW</title>
+</head>
+
+<body class="bg-light">
+
+    <section class="container-fluid bg-dark text-light">
+        <section class="navbar nav ">
+            <section class="container">
+                <section class=" w-100 d-flex justify-content-between align-items-center p-1  ">
+                    <section>
+                        <img src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="">
+                        <input class="rounded" type="text"
+                            placeholder="Search for Movies, Events, Plays, Sports and Activites" style="width: 30vw;">
+                    </section>
+
+                    <section class="d-flex align-items-center gap-3">
+                        <h6 class="dropdown-toggle " data-bs-toggle="dropdown" data-bs-target="#show">Vizag(Vis..</h6>
+                        <ul class="dropdown-menu " id="show">
+                            <li class="dropdown-item d-flex justify-content-evenly text-center gap-5">
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="">
+                                    <h6 class="">Mumbai</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ncr.png" alt="">
+                                    <h6>Delhi-NCR</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/bang.png" alt="">
+                                    <h6>Bengaluru</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/hyd.png" alt="">
+                                    <h6>Hyderabad</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ahd.png" alt="">
+                                    <h6>Ahmedabad</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/chd.png" alt="">
+                                    <h6>Chandigarh</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/chen.png" alt="">
+                                    <h6>Chenni</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/pune.png" alt="">
+                                    <h6>Pune</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/kolk.png" alt="">
+                                    <h6>Kolkata</h6>
+                                </section>
+                                <section>
+                                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/koch.png" alt="">
+                                    <h6>Kochi</h6>
+                                </section>
+                            </li>
+                        </ul>
+                        <section>
+                            <button type="button" class="btn btn-danger">Sign in</button>
+                        </section>
+
+
+                        <button class="btn btn-dark fs-4" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight">
+                            <ion-icon name="menu-sharp"></ion-icon>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+                            <div class="offcanvas-header bg-dark">
+                                <h5 class="offcanvas-title  h3 " id="offcanvasRightLabel">Hey!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body text-dark">
+                                <section class="d-flex  gap-1 m-0 p-0">
+                                    <img src="https://in.bmscdn.com/webin/movies/superstar/rewards_login.png"
+                                        width="15%" height="10%" alt="">
+                                    <p><small>Unlock special offers & great benefits</small></p>
+                                    <button type="button"
+                                        class="btn btn-outline-danger p-2 h-25">Login/Register</button>
+                                </section>
+                                <hr>
+                                <section class="d-flex gap-3 align-items-center justify-content-between">
+                                    <h6>
+                                        <ion-icon name="notifications-sharp"></ion-icon> Notification
+                                    </h6>
+                                    <h5>
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </h5>
+                                </section>
+                                <hr>
+
+
+
+
+                                <section class="d-flex gap-3 align-items-center justify-content-between ">
+                                    <h6><img src="https://assets-in.bmscdn.com/members/common/icons/purchasehistory.png"
+                                            alt="" width="10%">Purchase History
+                                        </h5>
+
+                                        <h5>
+                                            <ion-icon name="lock-closed-outline"></ion-icon>
+                                    </h6>
+                                </section>
+                                <hr>
+                                <section class="d-flex gap-3 align-items-center justify-content-between">
+                                    <h6> <img src="https://assets-in.bmscdn.com/members/common/icons/streamlibrary.png"
+                                            alt="" width="10%">
+                                        Stream Library
+                                        </h5>
+                                        <h5>
+                                            <ion-icon name="lock-closed-outline"></ion-icon>
+                                    </h6>
+                                </section>
+                                <hr>
+                                <section class="d-flex gap-3 align-items-center justify-content-between">
+                                    <h6><img src="https://assets-in.bmscdn.com/members/common/icons/playcreditcard.png"
+                                            alt="" width="10%">Play Credit Card</h6>
+                                    <h5>
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </h5>
+                                </section>
+                                <hr>
+                                <section class="d-flex gap-3 align-items-center justify-content-between">
+                                    <h6><img src="https://assets-in.bmscdn.com/members/common/icons/helpandsupport.png"
+                                            alt="" width="10%">Help & Support</h6>
+                                    <h5>
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </h5>
+                                </section>
+                                <hr>
+                                <section class="d-flex gap-3 align-items-center justify-content-between">
+                                    <h6> <img
+                                            src="https://assets-in.bmscdn.com/members/common/icons/accountandsettings.png"
+                                            alt="" width="10%">Accounts & Settings</h6>
+                                    <h5>
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </h5>
+                                </section>
+                                <hr>
+                                <section class="d-flex gap-3 align-items-center justify-content-between">
+                                    <h6> <img src="https://assets-in.bmscdn.com/members/common/icons/rewards.png" alt=""
+                                            width="15%">Rewards</h6>
+                                    <h5>
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </h5>
+                                </section>
+                                <hr>
+                                <section class="d-flex gap-3 align-items-center justify-content-between">
+                                    <h6> <img src="https://assets-in.bmscdn.com/members/common/icons/bookasmile.png"
+                                            alt="" width="15%">Book A Smile</h6>
+                                    <h5>
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </h5>
+                                </section>
+                                <hr>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+                </section>
+
+            </section>
+        </section>
+    </section>
+    <section class="container-fluid bg-warning  text-light">
+        <section class="container">
+            <section class="navtabs ">
+                <section class="d-flex p-2 justify-content-between flex-wrap">
+                    <section class="d-flex align-items-center gap-3 ">
+                        <h6>Movies</h6>
+                        <h6>Stream
+                            <sup class="text-danger">new</sup>
+                        </h6>
+                        <h6>Events</h6>
+                        <h6>Plays</h6>
+                        <h6>Sports</h6>
+                        <h6>Activites</h6>
+                        <h6>Buzz</h6>
+                    </section>
+
+                    <section class="d-flex align-items-center gap-3 ">
+
+                        <h6>ListYourShow
+                            <sup class="text-danger">new</sup>
+                        </h6>
+                        <h6>Corporates</h6>
+                        <h6>Offers</h6>
+                        <h6>GiftCards</h6>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+    </section>
+
+
+
+    <section class="container-fluid mt-3">
+        <section class="carousel slide" id="id_1" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+                <button type="button" data-bs-target="#id_1" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#id_1" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#id_1" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#id_1" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#id_1" data-bs-slide-to="4"></button>
+            </section>
+
+
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1663929098956_offerweb.jpg"
+                        style="width:100%;" class="d-block active" alt="">
+                </section>
+                <section class="carousel-item ">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1663580977920_webbanner.jpg"
+                        style="width:100%;" class="d-block" alt="">
+                </section>
+                <section class="carousel-item">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1661886745574_sunbur.jpg"
+                        style="width:100%;" class="d-block" alt="">
+                </section>
+                <section class="carousel-item">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1661886270194_wea.jpg"
+                        style="width:100%;" class="d-block" alt="">
+                </section>
+                <section class="carousel-item">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1661169352775_fb.jpg"
+                        style="width:100%;" class="d-block" alt="">
+                </section>
+
+            </section>
+
+
+            <button class="carousel-control-prev" data-bs-target="#id_1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#id_1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </section>
+    </section>
+
+
+
+    <section class="container mt-3 ">
+        <section>
+            <h3>Recommended Movies</h3>
+            <section class="d-flex flex-wrap justify-content-between">
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODclICAxN2sgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00338224-hbscbzuxxp-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>Chup</h6>
+                    <small>Action/drama</small>
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-NjVrIGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00319143-wrzunsprnr-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>Vikram Vedha</h6>
+                    <small>Action/drama</small>
+
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTIlICAxNzJrIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329656-zmlwfkjupb-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>Sita Ramam</h6>
+                    <small>Action/drama</small>
+
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTIlICAzayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00335977-qhuusdzpxh-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>Prem Geet 3</h6>
+                    <small>Action/drama</small>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+
+
+
+
+
+
+
+    <section class="container my-5 ">
+        <section class="text-center">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/lead-in-v3-collection-202102040828.png"
+                width="100%" alt="">
+        </section>
+    </section>
+
+    <section class="container mt-3 ">
+        <section>
+            <h3>The Best Of Entertainment</h3>
+            <section class="d-flex flex-wrap justify-content-between">
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTEwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/workshops-collection-202007231330.png"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/fitness-collection-2020081150.png"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+
+
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/kids-collection-202007220710.png"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+
+
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MjEwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/comedy-shows-collection-202007220710.png"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+
+    <section class="container-fluid bg-dark text-light mt-5 p-3">
+        <section class="container">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
+                alt="" width="100%">
+
+
+            <section class="mt-5 ">
+                <h5>Premieres</h5>
+                <small>Brand new releases every friday</small>
+            </section>
+
+
+            <section class="d-flex flex-wrap justify-content-between">
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00112828-jzbsxtepzr-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>Jurassic World</h6>
+                    <small>English</small>
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00076943-jbczfdswwn-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>Top Gun</h6>
+                    <small>English</small>
+
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00318402-hjavgjqelm-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>DC League of super-Pets</h6>
+                    <small>English</small>
+
+                </div>
+                <div style="width:20%;">
+                    <h6>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00327401-fwwesgbyfe-portrait.jpg"
+                            width="100%" class="rounded" alt="">
+                    </h6>
+                    <h6>Jurassic Hunt</h6>
+                    <small>English</small>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+
+
+    <section class="container mt-5">
+        <h4>Events Happening Near You </h4>
+
+        <section class="d-flex flex-wrap justify-content-between">
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNSBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00308764-gbkjcyxdhp-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Learn to connect with anyone</h6>
+                <small>English</small>
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAzIE5vdiBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00135939-mvjbbhxuhw-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Comedy Shows</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNSBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00305288-xlypvjatny-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>NCPA upcoming events</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00339432-kfmqzjemyf-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Live in Concert</h6>
+                <small>English</small>
+            </div>
+
+        </section>
+    </section>
+
+
+
+    <section class="container mt-5">
+        <h4>Online Streaming Events</h4>
+        <section class="d-flex flex-wrap justify-content-between">
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAzMCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304004-ywfyxuvafw-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Data Science </h6>
+                <small>English</small>
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAzMCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304009-faysjshlwa-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Digital Marketing</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAzMCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304010-tdktnsgzme-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Software Development</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAzMCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00304005-eqjzjdxfvw-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>MBA</h6>
+                <small>English</small>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+    <section class="container mt-5">
+        <h4>Outdoor Events <span class="badge bg-danger">NEW</span> </h4>
+        <section class="d-flex flex-wrap justify-content-between">
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCAyNiBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00339286-uzxeaqkfxk-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Sahara Star</h6>
+                <small>English</small>
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCA3IE9jdCBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00338953-hqlwgeqthk-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Charchaughi</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00332532-hhhmpbwyzf-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>International Health</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAyNyBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337743-qgnuanwpby-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Rangilo Re-</h6>
+                <small>English</small>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+    <section class="container mt-5">
+        <h4>Laughter Theraphy</h4>
+
+        <section class="d-flex flex-wrap justify-content-between">
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAyOSBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00339357-wkkgmyuceq-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Live at jio</h6>
+                <small>English</small>
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAzMCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00322178-dpaycrsfzd-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>TCC Bandra</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCAyNiBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00333386-cfalueuvfl-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Pannu Yaar!</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCAyNiBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327409-qgsuxeygaa-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>All Star Standup Comedy</h6>
+                <small>English</small>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+    <section class="container mt-5">
+        <h4>Top Games & Sport Events</h4>
+
+        <section class="d-flex flex-wrap justify-content-between">
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCA0IE5vdiBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340628-xnxvydyrez-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Dream Hack</h6>
+                <small>English</small>
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxMyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00335062-sckesfjslf-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Mumbai Cyclothon 2022</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCAyNiBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00137986-pvtxtxcnby-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Indian Chess League 2021</h6>
+                <small>English</small>
+
+            </div>
+            <div style="width:20%;">
+                <h6>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMiBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336076-qlkhdgldec-portrait.jpg"
+                        width="100%" class="rounded" alt="">
+                </h6>
+                <h6>Family Housie Night </h6>
+                <small>English</small>
+            </div>
+
+        </section>
+    </section>
+    <section class="container-fluid my-5 p-2 bg-white">
+        <section class="container">
+            <small>Home</small>
+        </section>
+    </section>
+
+    <section class="container-fluid my-5 p-2 bg-dark text-secondary">
+        <section class="container ">
+           <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3 flex-wrap">
+                <h6><img src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt=""> </h6>
+                <h6>List Your Show </h6>
+            
+            <small>Got a show, event, activity or a great experience? Partner with us &amp; get listed on BookMyShow</small>
+            </div>
+            <div>
+                <button type="button" class="btn btn-danger text-light">Contact Today</button>
+            </div>
+           </div>
+
+
+          <section class="d-flex justify-content-evenly text-center flex-wrap my-3 ">
+            <section>
+                <h5 class="fs-2"><ion-icon name="person-add-sharp"></ion-icon></h5>
+                <small>24/7 CUSTOMER CARE</small>
+               </section>
+    
+               <section>
+                <h5 class="fs-2"><ion-icon name="ticket-sharp"></ion-icon></h5>
+                <small>RESEND BOOKING CONFIRMATION</small>
+               </section>
+               <section>
+                <h5 class="fs-2"><ion-icon name="mail-open-sharp"></ion-icon></h5>
+                <small>SUBSCRIBE TO THE NEWSLETTER</small>
+               </section>
+       </section>
+       
+
+        <section >
+            <h6>Movies Now Showing in Mumbai</h6>
+            <small>Brahmastra|Vikram Vedha|chup|Dhokha-Round D Corner|Boyz 3|Avatar|Sita Ramam|</small>
+        </section>
+        <section class="my-4">
+            <h6>Upcoming Movies in Mumbai</h6>
+            <small>Neynay Vasthunnaa|Boudi Canteen|Mei Hoom Moosa|Kacher Manush|Daman|Lots of Love|Nenu C/o Nuvvu|Karnasubarner Guptodhon|Kantara|Rudraveena|Bridge|Don`t Worry Darling|Woh 3 Din|Bhoonataka Mandali|Thothapuri Chapter 1</small>
+        </section>
+    </section>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
